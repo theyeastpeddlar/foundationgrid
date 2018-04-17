@@ -1,0 +1,31 @@
+body	{
+	padding: 2vw 0;
+}
+
+.yeez-grid-container {
+	@include xy-grid-container;
+}
+
+.yeez-grid-x {
+	@include xy-grid();
+}
+
+.yeez-cell-left {
+	@include xy-cell(8);
+}
+
+.yeez-cell-right {
+	@include xy-cell(4);
+}
+
+.nested-grid-x {
+	@include xy-grid(); 
+}
+
+.nested-yeez-cell {
+	@include xy-cell(12);
+
+	@include breakpoint(medium) {
+		@include xy-cell(6);   
+	}
+}

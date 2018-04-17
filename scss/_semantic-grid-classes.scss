@@ -1,0 +1,33 @@
+	// ================================================================================================
+	// HELPER MIXINS
+	// These overwrite the basic Foundation XY Grid mixins to use css grid
+	// ================================================================================================
+	
+		@mixin xy-grid-container {
+			@supports(display: grid) {
+				max-width: $global-width;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 0 $global-padding;
+			}
+		}
+		
+		@mixin xy-grid {
+			@supports(display: grid) {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-gap: $global-margin;
+				width: 100%;
+
+				&:after {
+					content: none;
+				}		
+			}
+		}
+
+		@mixin xy-cell($span) {
+			@supports(display: grid) {
+				grid-column: span $span;
+			}
+		}
+
