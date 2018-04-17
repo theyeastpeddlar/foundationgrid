@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Foundation for Sites</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+
+		<div class="grid-container">
+
+			<div class="grid-x grid-padding-x">
+				<div class="large-12 cell">
+					<h1>Welcome to Foundation using CSS Grid!!</h1>
+				</div>
+			</div>
+
+			<div class="grid-x grid-padding-x">
+				<div class="cell">
+					<h5>Here&rsquo;s your basic grid if you inspect it you will see it isn't using the flex or float grid.<br> Instead it is using CSS Grid to render the column widths:</h5>
+					<!-- Grid Example -->
+
+					<div class="grid-x grid-padding-x">
+						<div class="large-12 cell">
+							<div class="primary callout">
+								<p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-x grid-padding-x">
+						<div class="large-6 medium-6 cell">
+							<div class="primary callout">
+								<p>Grid Column Span Six cell</p>
+							</div>
+						</div>
+						<div class="large-6 medium-6 cell">
+							<div class="primary callout">
+								<p>Grid Column Span Six cell</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-x grid-padding-x">
+						<div class="large-4 medium-4 small-4 cell">
+							<div class="primary callout">
+								<p>Grid Column Span Four cell</p>
+							</div>
+						</div>
+						<div class="large-4 medium-4 small-4 cell">
+							<div class="primary callout">
+								<p>Grid Column Span Four cell</p>
+							</div>
+						</div>
+						<div class="large-4 medium-4 small-4 cell">
+							<div class="primary callout">
+								<p>Grid Column Span Four cell</p>
+							</div>
+						</div>
+				</div>
+
+				<hr>
+
+				<div class="grid-x grid-padding-x">
+					<main class="cell medium-8">
+						<h3>How about a standard content and sidebar section?</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officiis incidunt magni iste accusamus. Voluptas possimus qui distinctio eum cumque, necessitatibus ea rem quasi omnis eaque optio a voluptatum nobis.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic illo repellendus, sit alias odio accusantium quasi obcaecati amet. Corrupti qui quisquam provident fuga. Facere pariatur maxime eveniet dignissimos eaque.</p>
+						<button class="button">Wow a button to nowhere</button>
+					</main>
+					<aside class="cell medium-4">
+						<h3>The sidebar just fits in nicely</h3>
+						<ul>
+							<li>bullet one</li>
+							<li>bullet two</li>
+							<li>bullet three</li>
+						</ul>
+					</aside>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="yeez-grid-container">
+		<hr>	
+		<h2>What about if you and your bros don't wanna use wack css classes on divs and wanna go mad semantic?</h2>	
+		<p class="lead">We got y'all covered fellas wit our dope semantic overrides, use the same ol semantics that you done used with Foundation before but we've turbocharged them with CSS Grid overrides if your browser allows it.</p>
+		<h3>WE GOT THIS....!!</h3>
+		<div class="yeez-grid-x">
+			<div class="yeez-cell-left">
+				<div class="callout">
+					<h3>hello I'm a cell that appears on the left</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, porro, aut praesentium sint eum pariatur odit consequuntur expedita soluta alias quod at laborum dolorem, placeat dolores? Nobis fuga consectetur necessitatibus?</p>
+				</div>
+				<div class="nested-grid-x">
+					<div class="nested-yeez-cell">
+						<div class="callout">
+							<h4>Damn bro I'm nested!!</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates aperiam aut sed placeat iusto soluta quod incidunt, debitis facilis velit voluptatem tempora? Perspiciatis, nemo voluptatum nulla dolores ullam dignissimos.</p>
+						</div>
+					</div>
+					<div class="nested-yeez-cell">
+						<div class="callout">
+							<h4>OH SNAP I'm nested too fam!!</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates aperiam aut sed placeat iusto soluta quod incidunt, debitis facilis velit voluptatem tempora? Perspiciatis, nemo voluptatum nulla dolores ullam dignissimos.</p>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="yeez-cell-right">
+					<div class="callout">
+						<h3>hello I'm a cell that appears on the right</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam cupiditate dolore adipisci impedit optio. Consequuntur, quidem veniam. Atque delectus quia error quidem explicabo nemo quo possimus repudiandae ipsa natus.</p>
+					</div>
+				</div			
+		</div>
+	</div>
+
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="node_modules/what-input/dist/what-input.js"></script>
+		<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
